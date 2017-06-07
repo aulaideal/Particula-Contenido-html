@@ -1,0 +1,61 @@
+name: Contenido HTML
+description: Muestra un bloque de contenido HTML.
+type: particle
+icon: fa-code
+
+configuration:
+  caching:
+    type: config_matches
+    values:
+      twig: '0'
+      filter: '0'
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    titulo:
+      type: input.text
+      label: Título
+      description: 'Título de la partícula'
+
+    etiquetatitulo:
+      type: select.select
+      label: Etiqueta del título
+      description: Define la etiqueta HTML que envolverá el título.
+      placeholder: 'h3'
+      default: h3
+      options:
+        h1: h1
+        h2: h2
+        h3: h3
+        h4: h4
+        h5: h5
+        h6: h6
+
+    clasecsstitulo:
+      type: input.text
+      label: Clase CSS del título
+      description: 'La clase CSS para el título de la partícula'
+
+    html:
+      type: textarea.textarea
+      label: Contenido
+      description: Enter custom HTML into here.
+      overridable: false
+
+    twig:
+       type: input.checkbox
+       label: Process Twig
+       description: Enable Twig template processing in the content. Twig will be processed before shortcodes.
+       default: '0'
+
+    filter:
+      type: input.checkbox
+      label: Process shortcodes
+      description: Enable shortcode processing / filtering in the content.
+      default: '0'
