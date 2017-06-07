@@ -1,5 +1,6 @@
 # Partícula "Contenido-HTML"
 Partícula para Gantry 5 que te permite incluir un bloque de contenido HTML con un título. 
+![sin-titulo-1_03](https://user-images.githubusercontent.com/9434043/26897220-637335d2-4b8d-11e7-8fff-76b3e02c58c4.jpg)
 
 Instalación
 -----------
